@@ -1,0 +1,24 @@
+service_homepage:
+    path:     /
+    defaults: { _controller: ServiceBundle:Default:index }
+
+add:
+    path:     /addService
+    defaults: { _controller: ServiceBundle:Service:addService }
+
+getAll:
+    path:     /getAllServices
+    defaults: { _controller: ServiceBundle:Service:getAllServices }
+
+getService:
+    path:     /getService/{id}
+    defaults: { _controller: ServiceBundle:Service:getService }
+
+updateService:
+    path:     /updateService/{id}
+    defaults: { _controller: ServiceBundle:Service:updateService }
+
+deleteService:
+    path:     /deleteService/{id}
+    defaults: { _controller: ServiceBundle:Service:deleteService }
+

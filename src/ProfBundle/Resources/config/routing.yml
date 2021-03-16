@@ -1,0 +1,37 @@
+prof_seance:
+    resource: "@ProfBundle/Resources/config/routing/seance.yml"
+    prefix:   /seance
+
+login:
+    path:     /login/{email}/{password}
+    defaults: { _controller: ProfBundle:Prof:login }
+alleleves:
+    path:     /eleveslist
+    defaults: { _controller: ProfBundle:Prof:ShowAlleleves }
+allprofs:
+    path:      /profsslist
+    defaults: { _controller: ProfBundle:Prof:ShowAllProfs }
+showpprof:
+    path:     /showUser/{id}
+    defaults: { _controller: ProfBundle:Prof:Showuser }
+DesactiverCpte:
+    path:     /DesactiverCp/{id}
+    defaults: { _controller: ProfBundle:Prof:DesactiverCpte }
+ActiverCpte:
+    path:      /activerCp/{id}
+    defaults: { _controller: ProfBundle:Prof:activerCpte }
+nbre:
+    path:     /NbreAbsenceEtPresent/{seance}
+    defaults: { _controller: ProfBundle:Prof:NbreAbsenceEtPresent }
+affecterProf:
+    path:     /affecterProfMatiere/{idmatiere}/{idProf}
+    defaults: { _controller: ProfBundle:Prof:affecterProfMatiere }
+affecterEtudiantAbsent:
+    path:      /affecterEtudiantAbsent/{idelev}/{idseance}
+    defaults: { _controller: ProfBundle:Prof:affecterEtudiantAbsent }
+Inscrip:
+    path:     /InscriptionAc
+    defaults: { _controller: ProfBundle:Prof:Inscription }
+ModifierProfile:
+    path:     /ProfileMaj/{idusr}
+    defaults: { _controller: ProfBundle:Prof:ModifierProfile }

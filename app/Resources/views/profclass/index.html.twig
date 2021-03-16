@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Profclasses list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for profClass in profClasses %}
+            <tr>
+                <td><a href="{{ path('profclass_show', { 'id': profClass.id }) }}">{{ profClass.id }}</a></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('profclass_show', { 'id': profClass.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('profclass_edit', { 'id': profClass.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('profclass_new') }}">Create a new profClass</a>
+        </li>
+    </ul>
+{% endblock %}

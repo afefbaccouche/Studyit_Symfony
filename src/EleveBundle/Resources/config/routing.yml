@@ -1,0 +1,28 @@
+eleve_homepage:
+    path:     /
+    defaults: { _controller: EleveBundle:Default:index }
+
+find_eleves:
+    path:     /findEleves
+    defaults: { _controller: EleveBundle:Eleve:findEleves }
+    methods: GET
+
+delete_eleve:
+    path:     /deleteEleve/{id}
+    defaults: { _controller: EleveBundle:Eleve:deleteEleve }
+    methods:  DELETE
+
+update_eleve:
+  path:     /updateEleve/{id}
+  defaults: { _controller: EleveBundle:Eleve:updateEleve }
+  methods:  PUT
+
+findbyid_eleves:
+  path:     /findEleveById/{id}
+  defaults: { _controller: EleveBundle:Eleve:findEleveById }
+  methods: GET
+
+ajout_eleves:
+  path:     /ajoutEleve
+  defaults: { _controller: EleveBundle:Eleve:ajoutEleve }
+  methods: POST

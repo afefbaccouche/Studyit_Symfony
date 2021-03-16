@@ -1,0 +1,24 @@
+niveau_index:
+    path:     /
+    defaults: { _controller: "ClassBundle:Niveau:index" }
+    methods:  GET
+
+niveau_show:
+    path:     /{idniveau}/show
+    defaults: { _controller: "ClassBundle:Niveau:show" }
+    methods:  GET
+
+niveau_new:
+    path:     /new
+    defaults: { _controller: "ClassBundle:Niveau:new" }
+    methods:  [GET, POST]
+
+niveau_edit:
+    path:     /edit
+    defaults: { _controller: "ClassBundle:Niveau:edit" }
+    methods:  [GET, POST]
+
+niveau_delete:
+    path:     /{idniveau}/delete
+    defaults: { _controller: "ClassBundle:Niveau:delete" }
+    methods:  DELETE

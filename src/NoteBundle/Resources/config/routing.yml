@@ -1,0 +1,53 @@
+note_homepage:
+  path:     /
+  defaults: { _controller: NoteBundle:Default:index }
+
+findall_notes:
+  path:     /findAllNotes
+  defaults: { _controller: NoteBundle:Note:findAllNotes }
+  methods: GET
+
+delete_note:
+  path:     /deleteNote/{id}
+  defaults: { _controller: NoteBundle:Note:deleteNote }
+  methods:  DELETE
+
+update_note:
+  path:     /editNote/{id}
+  defaults: { _controller: NoteBundle:Note:editNote }
+  methods:  PUT
+
+findbyid_note:
+  path:     /findNote/{id}
+  defaults: { _controller: NoteBundle:Note:findNote }
+  methods: GET
+
+ajout_note:
+  path:     /addNote
+  defaults: { _controller: NoteBundle:Note:addNote }
+  methods: POST
+
+findall_matieres:
+  path:     /findAllMatieres
+  defaults: { _controller: NoteBundle:Matiere:findAllMatieres }
+  methods: GET
+
+delete_matiere:
+  path:     /deleteMatiere/{id}
+  defaults: { _controller: NoteBundle:Matiere:deleteMatiere }
+  methods:  DELETE
+
+update_matiere:
+  path:     /editMatiere/{id}
+  defaults: { _controller: NoteBundle:Matiere:editMatiere }
+  methods:  PUT
+
+findbyid_matiere:
+  path:     /findMatiere/{id}
+  defaults: { _controller: NoteBundle:Matiere:findMatiere }
+  methods: GET
+
+ajout_matiere:
+  path:     /addMatiere
+  defaults: { _controller: NoteBundle:Matiere:addMatiere }
+  methods: POST

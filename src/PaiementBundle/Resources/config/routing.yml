@@ -1,0 +1,25 @@
+paiement_homepage:
+    path:     /
+    defaults: { _controller: PaiementBundle:Default:index }
+
+addPaiement:
+    path:     /addPaiement
+    defaults: { _controller: PaiementBundle:Paiement:addPaiement }
+
+
+getAllPaiements:
+    path:     /getAllPaiements
+    defaults: { _controller: PaiementBundle:Paiement:getAllPaiements }
+
+getPaiement:
+    path:     /getPaiement/{id}
+    defaults: { _controller: PaiementBundle:Paiement:getPaiement }
+
+updatePaiement:
+    path:     /updatePaiement/{id}
+    defaults: { _controller: PaiementBundle:Paiement:updatePaiement }
+
+deletePaiement:
+    path:     /deletePaiement/{id}
+    defaults: { _controller: PaiementBundle:Paiement:deletePaiement }
+

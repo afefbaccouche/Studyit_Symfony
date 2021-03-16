@@ -1,0 +1,4 @@
+services:
+#    prof.example:
+#        class: ProfBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

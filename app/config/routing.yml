@@ -1,0 +1,27 @@
+prof:
+    resource: "@ProfBundle/Resources/config/routing.yml"
+    prefix:   /
+
+note:
+    resource: "@NoteBundle/Resources/config/routing.yml"
+    prefix:   note
+
+eleve:
+    resource: "@EleveBundle/Resources/config/routing.yml"
+    prefix:   eleve
+
+class:
+    resource: "@ClassBundle/Resources/config/routing.yml"
+    prefix: class
+
+paiement:
+    resource: "@PaiementBundle/Resources/config/routing.yml"
+    prefix:   /paiement
+
+service:
+    resource: "@ServiceBundle/Resources/config/routing.yml"
+    prefix:   /service
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

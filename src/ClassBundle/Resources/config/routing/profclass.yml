@@ -1,0 +1,24 @@
+profclass_index:
+    path:     /
+    defaults: { _controller: "ClassBundle:ProfClass:index" }
+    methods:  GET
+
+profclass_show:
+    path:     /{id}/show
+    defaults: { _controller: "ClassBundle:ProfClass:show" }
+    methods:  GET
+
+profclass_new:
+    path:     /new
+    defaults: { _controller: "ClassBundle:ProfClass:new" }
+    methods:  [GET, POST]
+
+profclass_edit:
+    path:     /edit
+    defaults: { _controller: "ClassBundle:ProfClass:edit" }
+    methods:  [GET, POST]
+
+profclass_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ClassBundle:ProfClass:delete" }
+    methods:  DELETE

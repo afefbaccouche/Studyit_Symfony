@@ -1,0 +1,24 @@
+elevesclasse_index:
+    path:     /
+    defaults: { _controller: "ClassBundle:Elevesclasse:index" }
+    methods:  GET
+
+elevesclasse_show:
+    path:     /{id}/show
+    defaults: { _controller: "ClassBundle:Elevesclasse:show" }
+    methods:  GET
+
+elevesclasse_new:
+    path:     /new
+    defaults: { _controller: "ClassBundle:Elevesclasse:new" }
+    methods:  [GET, POST]
+
+elevesclasse_edit:
+    path:     /edit
+    defaults: { _controller: "ClassBundle:Elevesclasse:edit" }
+    methods:  [GET, POST]
+
+elevesclasse_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ClassBundle:Elevesclasse:delete" }
+    methods:  DELETE
